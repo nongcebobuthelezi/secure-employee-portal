@@ -6,6 +6,7 @@
 .employee-shell {
     display: grid;
     grid-template-columns: 270px minmax(0, 1fr);
+    align-items: stretch;
     width: 100%;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,15 +19,13 @@
    reference while supporting a full-height navigation area.
    ========================================================= */
 .employee-sidebar {
-    position: sticky;
-    top: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 270px;
-    height: 100vh;
-    min-height: 0;
+    min-height: 100vh;
     padding: 18px 16px 20px;
-    overflow-y: auto;
+    overflow: visible;
     color: #ffffff;
     background:
         radial-gradient(
@@ -555,7 +554,7 @@
 .employee-content {
     min-width: 0;
     padding: 26px 30px;
-    overflow: auto;
+    overflow: visible;
     background: #f4f7fb;
     box-sizing: border-box;
 }
