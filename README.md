@@ -4,6 +4,10 @@
 
 A secure employee self-service and access-management portal built with Blazor and .NET.
 
+<!-- Main project screenshot -->
+
+![Secure Employee Portal login page](docs/images/secure-employee-portal-login.png)
+
 ## Project Overview
 
 The Secure Employee Portal is a business-focused application designed to demonstrate secure employee authentication, protected account access, role-based experiences, and employee self-service workflows.
