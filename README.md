@@ -22,6 +22,16 @@ The Secure Employee Portal is a business-focused application designed to demonst
 
 The project is being developed as part of a professional .NET full-stack software engineering portfolio.
 
+<!-- Current employee-dashboard interface -->
+
+## Current Interface
+
+### Employee Dashboard
+
+The employee dashboard provides a protected self-service workspace with attendance, tasks, quick links, announcements, upcoming events, help resources, and account-security reminders.
+
+![Secure Employee Portal employee dashboard](docs/images/secure-employee-portal-dashboard.png)
+
 ## Current Status
 
 **In progress**
