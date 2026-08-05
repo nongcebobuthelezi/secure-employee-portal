@@ -4,6 +4,14 @@
 
 A secure employee self-service and access-management portal built with Blazor and .NET.
 
+<!-- Technology and project-status badges -->
+
+![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
+![C%23](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?logo=dotnet&logoColor=white)
+![Status](https://img.shields.io/badge/Status-In_Development-F59E0B)
+
 <!-- Main project screenshot -->
 
 ![Secure Employee Portal login page](docs/images/secure-employee-portal-login.png)
