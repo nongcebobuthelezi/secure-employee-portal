@@ -1,7 +1,7 @@
 .login-shell {
     width: min(1290px, calc(100vw - 72px));
-    height: min(880px, calc(100vh - 72px));
-    min-height: 760px;
+height: auto;
+min-height: min(880px, calc(100vh - 72px));
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
@@ -644,7 +644,8 @@ margin: 10px 0 24px;
     stroke-linejoin: round;
 }
 
-.form-group input {
+/* Reach the input element rendered by the Blazor InputText component. */
+.form-group ::deep input {
     width: 100%;
     height: 56px;
     padding: 0 18px;
@@ -663,7 +664,7 @@ margin: 10px 0 24px;
    This rule sits after the general input padding so the email
    placeholder keeps comfortable space from the envelope icon.
    ========================================================= */
-.form-group .input-with-icon input {
+.form-group .input-with-icon ::deep input {
     /* Preserve the existing right-side padding while creating
        enough room for the envelope and a clear visual gap. */
     padding-left: 50px;
@@ -674,7 +675,7 @@ margin: 10px 0 24px;
    Preserves room for the eye icon so neither the placeholder
    nor future typed password characters can overlap it.
    ========================================================= */
-.form-group .password-input input {
+.form-group .password-input ::deep input {
     padding-right: 50px;
 }
 
@@ -1014,4 +1015,25 @@ margin: 10px 0 24px;
         margin-top: 20px;
         margin-bottom: 0;
     }
+}
+
+/* =========================================================
+   REGISTRATION VALIDATION MESSAGE SPACING
+   Keeps server-side validation readable without squeezing
+   the approved Registration form layout.
+   ========================================================= */
+
+.registration-form ::deep .validation-message {
+    /* Keep validation feedback compact and directly tied to its field. */
+    margin-top: 5px;
+
+    /* Give the message comfortable breathing room before the next field. */
+    margin-bottom: 3px;
+
+    /* Keep validation feedback readable without dominating the form. */
+    font-size: 12px;
+    line-height: 1.25;
+
+    /* Preserve the existing error colour. */
+    color: #dc2626;
 }
